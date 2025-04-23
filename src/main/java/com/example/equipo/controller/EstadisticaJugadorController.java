@@ -39,4 +39,9 @@ public class EstadisticaJugadorController {
     public void eliminar(@PathVariable Long id) {
         estadisticaJugadorService.eliminar(id);
     }
+    @PostMapping("/cargar")
+    public List<estadisticajugador> guardarVarios(@RequestBody List<estadisticajugador> estadisticas) {
+        return estadisticaJugadorService.guardarVarios(estadisticas);
+    }
+
 }

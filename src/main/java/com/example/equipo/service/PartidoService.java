@@ -29,4 +29,8 @@ public class PartidoService {
     public void eliminar(Long id) {
         partidoRepository.deleteById(id);
     }
+    public List<partido> guardarVarios(List<partido> partidos) {
+        return partidoRepository.saveAll(partidos);
+    }
+
 }

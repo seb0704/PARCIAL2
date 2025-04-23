@@ -43,4 +43,5 @@ public class EquipoController {
     public List<equipo> guardarVarios(@RequestBody List<equipo> equipos) {
         return equipoService.guardarVarios(equipos);
     }
+
 }

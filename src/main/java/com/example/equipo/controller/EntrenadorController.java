@@ -39,4 +39,8 @@ public class EntrenadorController {
     public void eliminar(@PathVariable Long id) {
         entrenadorService.eliminar(id);
     }
+    @PostMapping("/cargar")
+    public List<entrenador> guardarVarios(@RequestBody List<entrenador> entrenadores) {
+        return entrenadorService.guardarVarios(entrenadores);
+    }
 }

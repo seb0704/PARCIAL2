@@ -39,4 +39,9 @@ public class PartidoController {
     public void eliminar(@PathVariable Long id) {
         partidoService.eliminar(id);
     }
+    @PostMapping("/cargar")
+    public List<partido> guardarVarios(@RequestBody List<partido> partidos) {
+        return partidoService.guardarVarios(partidos);
+    }
+
 }

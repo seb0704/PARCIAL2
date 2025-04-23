@@ -1,0 +1,21 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "equipo",
+            "Group": "Servers",
+            "Host": "aws-0-us-east-1.pooler.supabase.com",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres.niuutdjjlagkxubpnbtj",
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0,
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10
+            },
+            "Tags": []
+        }
+    }
+}

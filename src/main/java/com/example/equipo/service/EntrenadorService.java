@@ -29,4 +29,7 @@ public class EntrenadorService {
     public void eliminar(Long id) {
         entrenadorRepository.deleteById(id);
     }
+    public List<entrenador> guardarVarios(List<entrenador> entrenadores) {
+        return entrenadorRepository.saveAll(entrenadores);
+    }
 }

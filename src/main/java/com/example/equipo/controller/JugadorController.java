@@ -39,4 +39,8 @@ public class JugadorController {
     public void eliminar(@PathVariable Long id) {
         jugadorService.eliminar(id);
     }
+    @PostMapping("/cargar")
+    public List<jugador> guardarVarios(@RequestBody List<jugador> jugadores) {
+        return jugadorService.guardarVarios(jugadores);
+    }
 }

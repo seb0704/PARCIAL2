@@ -29,4 +29,8 @@ public class EstadisticaJugadorService {
     public void eliminar(Long id) {
         estadisticaJugadorRepository.deleteById(id);
     }
+    public List<estadisticajugador> guardarVarios(List<estadisticajugador> estadisticas) {
+        return estadisticaJugadorRepository.saveAll(estadisticas);
+    }
+
 }
